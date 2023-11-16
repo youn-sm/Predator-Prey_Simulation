@@ -221,7 +221,7 @@ def run_simulation(FPS):
             preys.append(i)
         # 60초 지나면 시뮬레이션 중지
         current_time = pygame.time.get_ticks() / 1000
-        if int(start_time) >= 60:
+        if int(start_time) >= 100:
             running = False
 
         # 그래프 업데이트
@@ -231,7 +231,7 @@ def run_simulation(FPS):
 
         pygame.display.flip()
         clock.tick(FPS)
-        if int(start_time) >= 5:
+        if int(start_time) >= 100:
             print(average_predators_speeds_every_second)
 
 
